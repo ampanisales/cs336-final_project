@@ -1,6 +1,4 @@
 # cs336-final_project
 
-Title:
-
-Goal:
+- Demonstrates a man-in-the-middle attack, and observes the urls that are found.
 
