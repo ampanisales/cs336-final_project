@@ -1,9 +1,9 @@
-# cs336-final_project
+:# cs336-final_project
 
 - Background Information:
   -  A man-in-the-middle (MITM) attack involves secretly becoming an intermediary between the communication between two parties; each thinks they  are talking to the other when in fact they are both talking to the attacker. The attacker can choose to pass the information along unmodified (simply observing the communication) or may choose to modify parts of the communication for the own evil ends. 
 
-- This project will demonstrate a man-in-the-middle attack, and observe/edit the HTTP traffic that is received from both parties.
+- This project will demonstrate a man-in-the-middle attack, and observe the HTTP traffic that is received from both parties.
 
 -  A tool called mitmproxy will be used to perform the actual man-in-the-middle attack. mitmproxy is a powerful tool that can capture and display all HTTP traffic when performing a MITM. 
  
@@ -19,7 +19,7 @@ arpspoof -i eth0 -t <gateway ip> <victim ip>
    
 - mitmproxy has a “transparent” mode which fakes an HTTP server on port 8080 (by default). But, all of our traffic from the victim is currently coming into the Pi on the default HTTP port (80). To fix this, Linux needs to be told to route all traffic from port 80 to port 8080.
 
-Forwards HTTP traffic to mitmproxy
+Forwards HTTP traffic to mitmproxy:
 ```
 sysctl -w net.ipv4.ip_forward=1
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 808  
