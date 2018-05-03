@@ -22,7 +22,7 @@ arpspoof -i <interface> -t <gateway ip> <victim ip>
 Forwards HTTP traffic to mitmproxy:
 ```
 sysctl -w net.ipv4.ip_forward=1
-iptables -t nat -A PREROUTING -i <interface> -p tcp --dport 80 -j REDIRECT --to-port 808  
+iptables -t nat -A PREROUTING -i <interface> -p tcp --dport 80 -j REDIRECT --to-port 8080  
 ```
 
 Calling mitmproxy with "transparent" mode enabled:
