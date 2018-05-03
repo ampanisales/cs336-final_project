@@ -36,7 +36,7 @@ mitmproxy -T --host
 
 Intercept filter:
 ```
-~s ~h "Host: .*\.cnn\.com" ~u /$
+~s ~h "Host: .*\.bbc\.com" ~u /$
 ```
 - This intercept filter tells mitmproxy to intercept all responses from bbc.com that are the result of the “/” (root) page.
 
