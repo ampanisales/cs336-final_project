@@ -1,4 +1,4 @@
-n# cs336-final_project
+# cs336-final_project
 
 - Background Information:
   -  A man-in-the-middle (MITM) attack involves secretly becoming an intermediary between the communication between two parties; each thinks they  are talking to the other when in fact they are both talking to the attacker. The attacker can choose to pass the information along unmodified (simply observing the communication) or may choose to modify parts of the communication for the own evil ends. 
