@@ -30,15 +30,15 @@ Calling mitmproxy with "transparent" mode enabled:
 mitmproxy -T --host
 ```
 
-- Right now, mitmproxy is showing us all of the HTTP traffic as it passes through the proxy. The victim asks what it thinks is the router (but is really the Pi) for http://bbc.com. The Pi then connects to bbc.com, fetches the result, and returns it to the victim.
+- Right now, mitmproxy is showing us all of the HTTP traffic as it passes through the proxy. The victim asks what it thinks is the router (but is really the Pi) for a website. The Pi then connects to the website, fetches the result, and returns it to the victim.
 
 - When mitmproxy intercepts a request or response, it does not immediately forward it, but it gives us a chance to edit it. In order for mitmproxy to intercept the response from bbc.com, an intercept filter needs to be set.
 
 Intercept filter:
 ```
-~s ~h "Host: .*\.bbc\.com" ~u /$
+~s ~h "Host: .*\.example\.com" ~u /$
 ```
-- This intercept filter tells mitmproxy to intercept all responses from bbc.com that are the result of the “/” (root) page.
+- This intercept filter tells mitmproxy to intercept all responses from the website that are the result of the “/” (root) page.
 
 -  If we look at mitmproxy, there will be an orange-highlighted response. This response has been intercepted and is awaiting our approval to send on. We can edit this reponse before we send it.
 
