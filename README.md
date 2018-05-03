@@ -1,13 +1,13 @@
 # cs336-final_project
 
 - Background Information:
-  -  A man-in-the-middle (MITM) attack involves secretly becoming an intermediary between the communication between two parties; each thinks they  are talking to the other when in fact they are both talking to the attacker. The attacker can choose to pass the information along unmodified (simply observing the communication) or may choose to modify parts of the communication for the own evil ends. 
+  -  A man-in-the-middle (MITM) attack involves secretly becoming an intermediary between the communication between two parties; each thinks they are talking to the other when in fact they are both talking to the attacker. The attacker can choose to pass the information along unmodified (simply observing the communication) or may choose to modify parts of the communication for the own evil ends. 
 
 - This project will demonstrate a man-in-the-middle attack, and observe/edit the HTTP traffic that is received from both parties.
 
--  A tool called mitmproxy will be used to perform the actual man-in-the-middle attack. mitmproxy is a powerful tool that can capture and display all HTTP traffic when performing a MITM. 
+-  A tool called mitmproxy will be used to perform the actual man-in-the-middle attack. mitmproxy is a powerful tool that can capture and display all HTTP traffic when performing a MITM attack. 
  
-- The first step is to insert th Pi between the victim computer and the rest of the internet. To do this, it is necessary need to know the victim’s IP address on the network and the IP address of the default gateway it uses to talk to the rest of the world (this is usually the local router). After getting these addresses, a technique called ARP spoofing will be used to fool the victim into thinking that the Pi actually holds the IP address of the gateway. Likewise the gateway will be fooled into thinking the Pi holds the IP address of the victim. In this manner the Pi can insert itself between the victim and the gateway and intercept and modify all traffic.
+- The first step is to insert the Pi between the victim computer and the rest of the internet. To do this, it is necessary to know the victim’s IP address on the network and the IP address of the default gateway it uses to talk to the rest of the world (this is usually the local router). After getting these addresses, a technique called ARP spoofing will be used to fool the victim into thinking that the Pi actually holds the IP address of the gateway. Likewise the gateway will be fooled into thinking the Pi holds the IP address of the victim. In this manner the Pi can insert itself between the victim and the gateway and intercept and modify all traffic.
    - ARP is the protocol used to resolve MAC addresses (the unique physical address every Ethernet controller has) to logical IP addresses.
    - The Pi will be sending fraudulent ARP responses to make the victims think the Pi has IP addresses it really does not. 
 
@@ -40,7 +40,7 @@ Intercept filter:
 ```
 - This intercept filter tells mitmproxy to intercept all responses from the website that are the result of the “/” (root) page.
 
--  If we look at mitmproxy, there will be an orange-highlighted response. This response has been intercepted and is awaiting our approval to send on. We can edit this reponse before we send it.
+-  If we look at mitmproxy, there will be an orange-highlighted response. This response has been intercepted and is awaiting our approval to send. We can edit this reponse before we send it.
 
 - Project inspired by this source:
     http://jeffq.com/blog/setting-up-a-man-in-the-middle-device-with-raspberry-pi-part-1/
