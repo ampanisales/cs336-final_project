@@ -1,4 +1,4 @@
-# cs336-final_project
+n# cs336-final_project
 
 - Background Information:
   -  A man-in-the-middle (MITM) attack involves secretly becoming an intermediary between the communication between two parties; each thinks they  are talking to the other when in fact they are both talking to the attacker. The attacker can choose to pass the information along unmodified (simply observing the communication) or may choose to modify parts of the communication for the own evil ends. 
@@ -40,7 +40,7 @@ Intercept filter:
 ```
 - This intercept filter tells mitmproxy to intercept all responses from bbc.com that are the result of the “/” (root) page.
 
--  If we look at mitmproxy, there will be an orange-highlighted response. This respose has been intercepted and is awaiting our approval to send on. We can edit this reponse before we send it.
+-  If we look at mitmproxy, there will be an orange-highlighted response. This response has been intercepted and is awaiting our approval to send on. We can edit this reponse before we send it.
 
 - Project inspired by this source:
     http://jeffq.com/blog/setting-up-a-man-in-the-middle-device-with-raspberry-pi-part-1/
