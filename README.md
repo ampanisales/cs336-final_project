@@ -32,7 +32,7 @@ mitmproxy -T --host
 
 - Right now, mitmproxy is showing us all of the HTTP traffic as it passes through the proxy. The victim asks what it thinks is the router (but is really the Pi) for a website. The Pi then connects to the website, fetches the result, and returns it to the victim.
 
-- When mitmproxy intercepts a request or response, it does not immediately forward it, but it gives us a chance to edit it. In order for mitmproxy to intercept the response from bbc.com, an intercept filter needs to be set.
+- When mitmproxy intercepts a request or response, it does not immediately forward it, but it gives us a chance to edit it. In order for mitmproxy to intercept the response from the website, an intercept filter needs to be set.
 
 Intercept filter:
 ```
