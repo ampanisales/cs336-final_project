@@ -32,6 +32,16 @@ mitmproxy -T --host
 ![mitmproxy](mitmproxy.JPG)
 
 - Right now, mitmproxy is showing us all of the HTTP traffic as it passes through the proxy. The victim asks what it thinks is the router (but is really the Pi) for a website. The Pi then connects to the website, fetches the result, and returns it to the victim.
+    - If we select a specific request/response pair we can see more information about the request and the response.
+
+Information about the request:
+![mitmproxy](mitmproxy_request.JPG)
+
+Information about the response:
+![mitmproxy](mitmproxy_response.JPG)
+
+Other information about the pair:
+![mitmproxy](mitmproxy_detail.JPG)
 
 - When mitmproxy intercepts a request or response, it does not immediately forward it, but it gives us a chance to edit it. In order for mitmproxy to intercept the response from the website, an intercept filter needs to be set.
 
