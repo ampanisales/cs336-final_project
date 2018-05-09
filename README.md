@@ -56,5 +56,7 @@ Intercept filter:
 
 -  After setting the intercept filter and the victim goes to the target website, if we look at mitmproxy, there will be an orange-highlighted response. This response has been intercepted and is awaiting our approval to send. We can edit the information in this response, like the status code or the location, before we send it.
 
+![mitmproxy](mitmproxy_intercepted_response.JPG)
+
 - Project inspired by this source:
     http://jeffq.com/blog/setting-up-a-man-in-the-middle-device-with-raspberry-pi-part-1/
