@@ -58,11 +58,11 @@ Intercept filter:
 
 ![mitmproxy](mitmproxy_intercepted_response.JPG)
 
-Changing the status code:
+Changing the status code (from 200 to 302):
 
 ![mitmproxy](mitmproxy_changing_status_code.JPG)
 
-Changing the location:
+Changing the location (instead of going to www.bbc.com, the victim will instead go to www.reddit.com):
 
 ![mitmproxy](mitmproxy_changing_location.JPG)
 
