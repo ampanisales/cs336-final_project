@@ -66,5 +66,7 @@ Changing the location (instead of going to www.bbc.com, the victim will instead 
 
 ![mitmproxy](mitmproxy_changing_location.JPG)
 
+- Note: 3 Terminal windows were needed to execute this project. One for each of the two arpspoof commands, and a third one to execute the rest of the commands.
+
 - Project inspired by this source:
     http://jeffq.com/blog/setting-up-a-man-in-the-middle-device-with-raspberry-pi-part-1/
