@@ -58,5 +58,13 @@ Intercept filter:
 
 ![mitmproxy](mitmproxy_intercepted_response.JPG)
 
+Changing the status code:
+
+![mitmproxy](mitmproxy_changing_status_code.JPG)
+
+Changing the location:
+
+![mitmproxy](mitmproxy_changing_location.JPG)
+
 - Project inspired by this source:
     http://jeffq.com/blog/setting-up-a-man-in-the-middle-device-with-raspberry-pi-part-1/
