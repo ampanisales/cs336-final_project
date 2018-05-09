@@ -42,7 +42,7 @@ Information about the response:
 
 ![mitmproxy](mitmproxy_response.JPG)
 
-Other information about the pair:
+Connection information about the pair:
 
 ![mitmproxy](mitmproxy_detail.JPG)
 
