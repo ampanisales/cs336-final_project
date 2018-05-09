@@ -40,7 +40,7 @@ Intercept filter:
 ```
 - This intercept filter tells mitmproxy to intercept all responses from the website that are the result of the “/” (root) page.
 
--  If we look at mitmproxy, there will be an orange-highlighted response. This response has been intercepted and is awaiting our approval to send. We can edit this reponse before we send it.
+-  After setting the intercept filter, if we look at mitmproxy, there will be an orange-highlighted response. This response has been intercepted and is awaiting our approval to send. We can edit this reponse before we send it.
 
 - Project inspired by this source:
     http://jeffq.com/blog/setting-up-a-man-in-the-middle-device-with-raspberry-pi-part-1/
