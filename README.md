@@ -35,12 +35,15 @@ mitmproxy -T --host
     - If we select a specific request/response pair we can see more information about the request and the response.
 
 Information about the request:
+
 ![mitmproxy](mitmproxy_request.JPG)
 
 Information about the response:
+
 ![mitmproxy](mitmproxy_response.JPG)
 
 Other information about the pair:
+
 ![mitmproxy](mitmproxy_detail.JPG)
 
 - When mitmproxy intercepts a request or response, it does not immediately forward it, but it gives us a chance to edit it. In order for mitmproxy to intercept the response from the website, an intercept filter needs to be set.
