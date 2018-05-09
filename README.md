@@ -16,6 +16,7 @@ Arp spoofing:
 arpspoof -i <interface> -t <victim ip> <gateway ip>
 arpspoof -i <interface> -t <gateway ip> <victim ip>
 ```
+![arpspoof](arpspoof.JPG)
    
 - mitmproxy has a “transparent” mode which fakes an HTTP server on port 8080 (by default). But, all of the traffic from the victim is currently coming into the Pi on the default HTTP port (80). To fix this, Linux needs to be told to route all traffic from port 80 to port 8080.
 
