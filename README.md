@@ -29,6 +29,7 @@ Calling mitmproxy with "transparent" mode enabled:
 ```
 mitmproxy -T --host
 ```
+![mitmproxy](mitmproxy.JPG)
 
 - Right now, mitmproxy is showing us all of the HTTP traffic as it passes through the proxy. The victim asks what it thinks is the router (but is really the Pi) for a website. The Pi then connects to the website, fetches the result, and returns it to the victim.
 
