@@ -36,7 +36,7 @@ mitmproxy -T --host
 
 Intercept filter:
 ```
-~s ~h "Host: .*\.example\.com" ~u /$
+~s ~h "Host: .*\.[example_website_name]\.com" ~u /$
 ```
 - This intercept filter tells mitmproxy to intercept all responses from the website that are the result of the “/” (root) page.
 
